@@ -1,0 +1,9 @@
+https://frapac.github.io/2020/06/0_coauthor_processing/?fbclid=IwAR0e-xZoeXHqKCmpLxc94cy6ErGYEo1zyNa74ee89lywlEBOYsb5YNkzX8Y
+
+https://github.com/linhung0319/google-scholar-crawler
+
+https://github.com/ckreibich/scholar.py
+
+https://github.com/scholarly-python-package/scholarly
+
+https://github.com/1ucian0/chalmers-web
