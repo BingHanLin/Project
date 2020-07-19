@@ -1,0 +1,20 @@
+[INFO  - 2018-12-22T15:47:09.731Z] GhostDriver - Main - running on port 14719
+[INFO  - 2018-12-22T15:47:14.132Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-12-22T15:47:14.132Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.customHeaders:  - {}
+[INFO  - 2018-12-22T15:47:14.133Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-12-22T15:47:14.133Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: da270df0-0600-11e9-9dd1-51c83e27b155
+[ERROR - 2018-12-22T15:47:15.977Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'el.prepend(gdprMessageDiv)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-12-22T15:47:15.977Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.onError - stack:
+  (anonymous function) (https://img.appledaily.com.tw/appledaily/images/gdpr/gdpr-v2.js?cpreg=TW&platform=WEB&v=20180629:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-12-22T15:47:20.950Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1545493640908
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-12-22T15:47:22.617Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-12-22T15:47:22.617Z] Session [da270df0-0600-11e9-9dd1-51c83e27b155] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/HhvhFNp-KIz.js:55[INFO  - 2018-12-22T15:50:21.379Z] SessionManagerReqHan[INFO  - 2018-12-22T15:52:09.734Z] SessionManagerReqHand - _cleanupWindowlessSession[INFO  - 2018-12-22T15:55:21.379Z] SessionManagerReqHan[INFO  - 2018-12-22T15:57:09.739Z] SessionManagerReqHand - _cleanupWindowlessSession[INFO  - 2018-12-22T16:00:21.390Z] SessionManagerReqHan[INFO  - 2018-12-22T16:02:09.740Z] SessionManagerReqHand - _cleanupWindowlessSession[INFO  - 2018-12-22T16:05:21.390Z] SessionManagerReqHan[INFO  - 2018-12-22T16:07:09.749Z] SessionManagerReqHand - _cleanupWindowlessSession[INFO  - 2018-12-22T16:10:21.392Z] SessionManagerReqHan[INFO  - 2018-12-22T16:12:09.753Z] SessionManagerReqHand - _cleanupWindowlessSession[INFO  - 2018-12-22T16:15:21.393Z] SessionManagerReqHan[INFO  - 2018-12-22T16:17:09.753Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
