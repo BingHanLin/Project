@@ -1,0 +1,82 @@
+#!/bin/bash
+cd ${0%/*} || exit 1    # Run from this directory
+
+VTK_BIN_PATH_TO_COPY=/d/VTK-8.2.0/vtk/bin
+
+mkdir -p build/Release
+rm -r bin
+
+cd build/Release
+
+cmake -DVTK_DIR:PATH=D:/VTK-8.2.0/vtk/lib/cmake/vtk-8.2 ../.. -G "Visual Studio 16 2019"
+cmake --build . --config Release
+cmake --install . --config Release
+
+cd ../..
+
+# copy vtk dll
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersPoints-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingContextOpenGL2-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkViewsContext2D-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingGL2PSOpenGL2-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingGL2PSOpenGL2-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkGUISupportQt-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkChartsCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingOpenGL2-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingContext2D-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkInteractionWidgets-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkInteractionStyle-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkIOImage-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingAnnotation-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkIOXML-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkIOCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingFreeType-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkRenderingCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersSources-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersGeneral-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonExecutionModel-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonDataModel-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonMisc-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonTransforms-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonMath-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkViewsCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkglew-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkgl2ps-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersModeling-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersExtraction-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtksys-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkInfovisCore-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonColor-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonSystem-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingGeneral-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersHybrid-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingHybrid-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkCommonComputationalGeometry-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkmetaio-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkDICOMParser-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkjpeg-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkpng-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtktiff-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkzlib-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingColor-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkIOXMLParser-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtklzma-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtklz4-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkdoubleconversion-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkfreetype-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersGeometry-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkFiltersStatistics-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingSources-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkexpat-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkImagingFourier-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkIOMovie-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtktheora-8.2.dll bin/Release
+cp "$VTK_BIN_PATH_TO_COPY"/vtkogg-8.2.dll bin/Release
+cp test.vtu bin/Release
+
+
+bin/Release/vtkThreeViewDrawing.exe

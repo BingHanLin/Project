@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\myWork\VTK_test\CPUDepthPeeling\build\Release\CMakeFiles\790ea932e7b46a6e3268d8a8f6eb218f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{26CB61A6-FA20-359D-A2A8-224C689352BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

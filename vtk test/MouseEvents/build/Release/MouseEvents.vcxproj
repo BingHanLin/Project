@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED9512D7-1303-388B-AC6D-37B1AD2C9449}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>MouseEvents</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myWork\VTK_test\MouseEvents\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MouseEvents.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MouseEvents</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myWork\VTK_test\MouseEvents\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MouseEvents.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MouseEvents</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myWork\VTK_test\MouseEvents\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MouseEvents.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MouseEvents</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myWork\VTK_test\MouseEvents\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MouseEvents.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MouseEvents</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\VTK-8.2.0\vtk\lib\vtkInteractionStyle-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersExtraction-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersStatistics-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingFourier-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContextOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContext2D-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingFreeType-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkfreetype-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingGL2PSOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkgl2ps-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkpng-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonColor-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersSources-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeneral-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonComputationalGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonExecutionModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonDataModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonTransforms-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMisc-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMath-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonSystem-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtksys-8.2.lib;ws2_32.lib;Psapi.lib;D:\VTK-8.2.0\vtk\lib\vtkglew-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkzlib-8.2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myWork/VTK_test/MouseEvents/build/Release/Debug/MouseEvents.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myWork/VTK_test/MouseEvents/bin/Debug/MouseEvents.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\VTK-8.2.0\vtk\lib\vtkInteractionStyle-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersExtraction-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersStatistics-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingFourier-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContextOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContext2D-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingFreeType-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkfreetype-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingGL2PSOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkgl2ps-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkpng-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonColor-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersSources-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeneral-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonComputationalGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonExecutionModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonDataModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonTransforms-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMisc-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMath-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonSystem-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtksys-8.2.lib;ws2_32.lib;Psapi.lib;D:\VTK-8.2.0\vtk\lib\vtkglew-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkzlib-8.2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myWork/VTK_test/MouseEvents/build/Release/Release/MouseEvents.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myWork/VTK_test/MouseEvents/bin/Release/MouseEvents.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\VTK-8.2.0\vtk\lib\vtkInteractionStyle-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersExtraction-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersStatistics-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingFourier-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContextOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContext2D-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingFreeType-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkfreetype-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingGL2PSOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkgl2ps-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkpng-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonColor-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersSources-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeneral-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonComputationalGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonExecutionModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonDataModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonTransforms-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMisc-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMath-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonSystem-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtksys-8.2.lib;ws2_32.lib;Psapi.lib;D:\VTK-8.2.0\vtk\lib\vtkglew-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkzlib-8.2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myWork/VTK_test/MouseEvents/build/Release/MinSizeRel/MouseEvents.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myWork/VTK_test/MouseEvents/bin/MinSizeRel/MouseEvents.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VTK-8.2.0\vtk\include\vtk-8.2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\VTK-8.2.0\vtk\lib\vtkInteractionStyle-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersExtraction-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersStatistics-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingFourier-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContextOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingContext2D-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingFreeType-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkfreetype-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingGL2PSOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkgl2ps-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkpng-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkImagingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingOpenGL2-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkRenderingCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonColor-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersSources-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeneral-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonComputationalGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersGeometry-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkFiltersCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonExecutionModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonDataModel-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonTransforms-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMisc-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonMath-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonSystem-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkCommonCore-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtksys-8.2.lib;ws2_32.lib;Psapi.lib;D:\VTK-8.2.0\vtk\lib\vtkglew-8.2.lib;D:\VTK-8.2.0\vtk\lib\vtkzlib-8.2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myWork/VTK_test/MouseEvents/build/Release/RelWithDebInfo/MouseEvents.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myWork/VTK_test/MouseEvents/bin/RelWithDebInfo/MouseEvents.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myWork\VTK_test\MouseEvents\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/myWork/VTK_test/MouseEvents/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/MouseEvents -BD:/myWork/VTK_test/MouseEvents/build/Release --check-stamp-file D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonColor.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonComputationalGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonDataModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonExecutionModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMath.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMisc.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonSystem.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonTransforms.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersExtraction.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeneral.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersSources.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersStatistics.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingFourier.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkInteractionStyle.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContext2D.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContextOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingFreeType.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingGL2PSOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkeigen.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkfreetype.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkgl2ps.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkglew.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkkwiml.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkpng.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtksys.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkutf8.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkzlib.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\UseVTK.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfig.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfigVersion.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets-release.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\vtkModuleAPI.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/myWork/VTK_test/MouseEvents/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/MouseEvents -BD:/myWork/VTK_test/MouseEvents/build/Release --check-stamp-file D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonColor.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonComputationalGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonDataModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonExecutionModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMath.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMisc.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonSystem.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonTransforms.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersExtraction.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeneral.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersSources.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersStatistics.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingFourier.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkInteractionStyle.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContext2D.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContextOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingFreeType.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingGL2PSOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkeigen.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkfreetype.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkgl2ps.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkglew.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkkwiml.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkpng.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtksys.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkutf8.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkzlib.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\UseVTK.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfig.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfigVersion.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets-release.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\vtkModuleAPI.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/myWork/VTK_test/MouseEvents/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/MouseEvents -BD:/myWork/VTK_test/MouseEvents/build/Release --check-stamp-file D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonColor.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonComputationalGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonDataModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonExecutionModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMath.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMisc.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonSystem.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonTransforms.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersExtraction.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeneral.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersSources.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersStatistics.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingFourier.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkInteractionStyle.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContext2D.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContextOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingFreeType.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingGL2PSOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkeigen.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkfreetype.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkgl2ps.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkglew.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkkwiml.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkpng.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtksys.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkutf8.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkzlib.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\UseVTK.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfig.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfigVersion.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets-release.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\vtkModuleAPI.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/myWork/VTK_test/MouseEvents/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/MouseEvents -BD:/myWork/VTK_test/MouseEvents/build/Release --check-stamp-file D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonColor.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonComputationalGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonDataModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonExecutionModel.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMath.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonMisc.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonSystem.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkCommonTransforms.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersExtraction.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeneral.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersGeometry.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersSources.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkFiltersStatistics.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkImagingFourier.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkInteractionStyle.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContext2D.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingContextOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingCore.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingFreeType.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingGL2PSOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkRenderingOpenGL2.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkeigen.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkfreetype.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkgl2ps.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkglew.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkkwiml.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkpng.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtksys.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkutf8.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\Modules\vtkzlib.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\UseVTK.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfig.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKConfigVersion.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets-release.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\VTKTargets.cmake;D:\VTK-8.2.0\vtk\lib\cmake\vtk-8.2\vtkModuleAPI.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\3.15.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myWork\VTK_test\MouseEvents\build\Release\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\myWork\VTK_test\MouseEvents\MouseEvents.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\myWork\VTK_test\MouseEvents\build\Release\ZERO_CHECK.vcxproj">
+      <Project>{6D204831-6AAD-30E4-9718-D20A20ECE87D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

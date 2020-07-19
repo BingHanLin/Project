@@ -1,0 +1,10 @@
+^D:\MYWORK\VTK_TEST\MOUSEEVENTS\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/MouseEvents -BD:/myWork/VTK_test/MouseEvents/build/Release --check-stamp-file D:/myWork/VTK_test/MouseEvents/build/Release/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

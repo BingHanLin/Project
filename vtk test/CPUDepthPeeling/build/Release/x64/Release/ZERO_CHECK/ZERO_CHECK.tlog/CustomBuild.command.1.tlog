@@ -1,0 +1,10 @@
+^D:\MYWORK\VTK_TEST\CPUDEPTHPEELING\BUILD\RELEASE\CMAKEFILES\790EA932E7B46A6E3268D8A8F6EB218F\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SD:/myWork/VTK_test/CPUDepthPeeling -BD:/myWork/VTK_test/CPUDepthPeeling/build/Release --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/myWork/VTK_test/CPUDepthPeeling/build/Release/CorrectlyRenderTranslucentGeometry.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
