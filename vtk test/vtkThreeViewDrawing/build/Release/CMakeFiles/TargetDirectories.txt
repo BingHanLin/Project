@@ -1,3 +1,0 @@
-D:/myWork/VTK_test/vtkThreeViewDrawing/build/Release/CMakeFiles/vtkThreeViewDrawing.dir
-D:/myWork/VTK_test/vtkThreeViewDrawing/build/Release/CMakeFiles/ALL_BUILD.dir
-D:/myWork/VTK_test/vtkThreeViewDrawing/build/Release/CMakeFiles/ZERO_CHECK.dir
