@@ -1,0 +1,25 @@
+#!/bin/bash
+cd ${0%/*} || exit 1    # Run from this directory
+
+rm -r build/*
+rm -r bin
+rm *.log
+rm -rf extern
+
+mkdir bin
+mkdir build
+cd build
+
+if [ "$(uname)" == "Darwin" ]; then
+    echo "Mac is currectly not supported"       
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    echo "Detected plattform: Linux"
+    cmake ..
+    make -j$(nproc)
+    cd ..
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] || [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    echo "Detected plattform: Win"
+    cmake .. -G "Visual Studio 16 2019" -A x64
+    cmake --build . --config Release
+    cmake --install . --config Release
+fi
