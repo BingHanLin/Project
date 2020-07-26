@@ -2,8 +2,11 @@ https://frapac.github.io/2020/06/0_coauthor_processing/?fbclid=IwAR0e-xZoeXHqKCm
 
 https://github.com/linhung0319/google-scholar-crawler
 
+scholar.py
 https://github.com/ckreibich/scholar.py
 
+scholarly
 https://github.com/scholarly-python-package/scholarly
 
+chalmers-web
 https://github.com/1ucian0/chalmers-web
