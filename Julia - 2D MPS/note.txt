@@ -1,0 +1,7 @@
+sph in julia
+https://github.com/eschnett/SPH.jl/blob/master/src/SPH.jl
+sph in c++
+https://lucasschuermann.com/writing/implementing-sph-in-2d
+
+openmps
+https://github.com/openmps/openmps
