@@ -12,5 +12,6 @@
             "cellIdentificationPattern": "^(\\/\\/ %%|\\/\\/%%|\\/\\/ \\<codecell\\>|\\/\\/ In\\[\\d*?\\]|\\/\\/ In\\[ \\])(.*)"
         }
     ],
-    "files.saveConflictResolution": "overwriteFileOnDisk"
+    "files.saveConflictResolution": "overwriteFileOnDisk",
+    "julia.environmentPath": "d:\\#binghan_github\\Project\\Julia - 2D MPS\\MPSJL"
 }

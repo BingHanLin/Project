@@ -5,3 +5,6 @@ https://lucasschuermann.com/writing/implementing-sph-in-2d
 
 openmps
 https://github.com/openmps/openmps
+
+julia workflow
+https://medium.com/@Jernfrost/my-new-workflow-with-julia-1-0-99711103d97c
