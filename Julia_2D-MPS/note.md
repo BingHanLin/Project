@@ -8,3 +8,7 @@ https://github.com/openmps/openmps
 
 julia workflow
 https://medium.com/@Jernfrost/my-new-workflow-with-julia-1-0-99711103d97c
+
+Julia: Change Current Environment
+
+https://julialang.github.io/Pkg.jl/v1/creating-packages/
