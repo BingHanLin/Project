@@ -8,10 +8,12 @@ export Particle, ParticlePool
 using .InteractionModel
 export InteractionModel
 
-using .geometryData: BoxGeometry, generateParticle
+using .GeometryData: BoxGeometry, generateParticle
 export BoxGeometry, generateParticle
 
-using .SimulationDomain: SimulationData, summary, updateNeighborPool
-export SimulationData, summary, updateNeighborPool
+using .SimulationDomain:
+    SimulationData, summary, updateNeighborPool, updateNumberDensity, updatePreParticlePool
+export SimulationData,
+    summary, updateNeighborPool, updateNumberDensity, updatePreParticlePool
 
 end # module

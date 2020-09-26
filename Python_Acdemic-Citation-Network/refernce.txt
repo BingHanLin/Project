@@ -13,3 +13,7 @@ https://github.com/1ucian0/chalmers-web
 
 
 https://ithelp.ithome.com.tw/articles/10224979
+
+
+ask bibtex from sciencedirect
+https://www.sciencedirect.com/sdfe/arp/cite?pii=S0307904X20303607&format=text%2Fx-bibtex&withabstract=true
