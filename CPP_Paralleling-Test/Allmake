@@ -19,7 +19,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     cd ..
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] || [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     echo "Detected plattform: Win"
-    cmake .. -G "Visual Studio 16 2019" -A x64
+    cmake .. -G "MinGW Makefiles"
     cmake --build . --config Release
     cmake --install . --config Release
 fi

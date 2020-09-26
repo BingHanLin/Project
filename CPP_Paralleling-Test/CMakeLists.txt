@@ -39,6 +39,6 @@ endif()
 ##
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/thirdParty)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/openMPTest)
-add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/parallelSTLTest)
+# add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/parallelSTLTest)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src/app)
 

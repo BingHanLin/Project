@@ -7,6 +7,6 @@ add_executable(${PROJECT_NAME} ${DIR_MAIN_SRCS})
 
 target_link_libraries(${PROJECT_NAME}
 openMPTest
-parallelSTLTest
+# parallelSTLTest
 )
 
