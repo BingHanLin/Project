@@ -2,3 +2,4 @@ bin/
 build/
 *.ipynb_checkpoints
 *.log
+.vscode/
