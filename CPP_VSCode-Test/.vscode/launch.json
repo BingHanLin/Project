@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "CPP Debug(gdb)",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/${fileBasenameNoExtension}.exe",
@@ -12,7 +12,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "D:/msys32/mingw64/bin/gdb.exe",
+            "miDebuggerPath": "d:/msys2/mingw64/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -20,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build"
+            "preLaunchTask": "build main"
         }
     ]
 }

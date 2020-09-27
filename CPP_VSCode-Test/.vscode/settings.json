@@ -1,3 +1,6 @@
 {
-    "terminal.integrated.automationShell.windows": ""
+    "files.associations": {
+        "string": "cpp",
+        "iostream": "cpp"
+    }
 }
