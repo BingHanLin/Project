@@ -7,9 +7,9 @@ binDir=bin
 buildDir=build
 
 cmake   -S. -B$buildDir \
-        -DQt5_DIR:PATH="D:/Qt/5.12.4/mingw73_64/lib/cmake/Qt5" \
-        -DQt5_BIN_DIR:PATH="/d/Qt/5.12.4/mingw73_64/bin" \
-        -DCMAKE_BUILD_TYPE=Release \
+        -DQt5_DIR:PATH="D:/Qt/5.14.2/mingw73_64/lib/cmake/Qt5" \
+        -DQt5_BIN_DIR:PATH="/d/Qt/5.14.2/mingw73_64/bin" \
+        -DCMAKE_BUILD_TYPE=Debug \
         -G "MinGW Makefiles"
 
 cmake --build $buildDir
