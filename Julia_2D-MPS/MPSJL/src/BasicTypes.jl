@@ -1,6 +1,6 @@
 module BasicTypes
 export Vec3F, Vec3I
-export particleType,fluid, wall, dummy, disabled
+export particleType, fluid, wall, dummy, disabled
 
 using StaticArrays
 
