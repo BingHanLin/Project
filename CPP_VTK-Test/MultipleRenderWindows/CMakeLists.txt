@@ -7,10 +7,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
 
-add_executable(MultipleRenderWindows MultipleRenderWindows.cxx)
+add_executable(${CMAKE_PROJECT_NAME} MultipleRenderWindows.cxx)
 
-if(VTK_LIBRARIES)
-  target_link_libraries(MultipleRenderWindows ${VTK_LIBRARIES})
-else()
-  target_link_libraries(MultipleRenderWindows vtkHybrid vtkWidgets)
-endif()
+target_link_libraries(${CMAKE_PROJECT_NAME} ${VTK_LIBRARIES})
