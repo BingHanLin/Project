@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/43046798/how-to-rotate-a-vtk-scene-around-a-specific-point
