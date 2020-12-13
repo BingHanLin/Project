@@ -1,5 +1,4 @@
 #include "parSTL.hpp"
-// #include "tbb/task_scheduler_init.h"
 #include <algorithm>
 #include <chrono>
 #include <execution>
@@ -10,14 +9,6 @@
 // https://software.intel.com/en-us/forums/intel-c-compiler/topic/777017
 void parSTL(const int inputThreadNum, const int iterationCount,
             const int testSize) {
-
-  // Init TBB Threads
-  int pstlThreadNum;
-  // pstlThreadNum = tbb::task_scheduler_init::default_num_threads();
-  pstlThreadNum = inputThreadNum;
-
-  std::cout << "PSTL use thread numbers: " << pstlThreadNum << std::endl;
-  // tbb::task_scheduler_init init(pstlThreadNum);
 
   std::random_device rd;
   // generate some random doubles:
