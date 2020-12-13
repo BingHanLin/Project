@@ -5,3 +5,5 @@ build/
 .vscode/
 *.exe
 *.log
+**/vtkPath.config
+
