@@ -15,4 +15,4 @@ cmake --install build --config Release
 
 cp "$VTK_BIN"/*-8.2.dll bin/Release
 
-bin/Release/CorrectlyRenderTranslucentGeometry.exe 100 100 50 0.1 0 0
+bin/Release/main.exe
