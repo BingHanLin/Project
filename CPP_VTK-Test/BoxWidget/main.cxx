@@ -1,12 +1,13 @@
 #include <vtkSmartPointer.h>
 // For the rendering pipeline setup:
-#include <vtkConeSource.h>
-#include <vtkPolyDataMapper.h>
 #include <vtkActor.h>
-#include <vtkRenderer.h>
+#include <vtkConeSource.h>
+#include <vtkInteractorStyleTrackballCamera.h>
+#include <vtkPolyDataMapper.h>
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
-#include <vtkInteractorStyleTrackballCamera.h>
+#include <vtkRenderer.h>
+
 // For vtkBoxWidget:
 #include <vtkBoxWidget.h>
 #include <vtkCommand.h>
@@ -14,84 +15,67 @@
 
 class vtkMyCallback : public vtkCommand
 {
-public:
-  static vtkMyCallback *New()
-  {
-    return new vtkMyCallback;
-  }
-  virtual void Execute( vtkObject *caller, unsigned long, void* )
-  {
-    // Here we use the vtkBoxWidget to transform the underlying coneActor
-    // (by manipulating its transformation matrix).
-    vtkSmartPointer<vtkTransform> t =
-      vtkSmartPointer<vtkTransform>::New();
-    vtkBoxWidget *widget = reinterpret_cast<vtkBoxWidget*>(caller);
-    widget->GetTransform( t );
-    widget->GetProp3D()->SetUserTransform( t );
-  }
+   public:
+    static vtkMyCallback *New()
+    {
+        return new vtkMyCallback;
+    }
+    virtual void Execute(vtkObject *caller, unsigned long, void *)
+    {
+        // Here we use the vtkBoxWidget to transform the underlying coneActor
+        // (by manipulating its transformation matrix).
+        vtkSmartPointer<vtkTransform> t = vtkSmartPointer<vtkTransform>::New();
+        vtkBoxWidget *widget = reinterpret_cast<vtkBoxWidget *>(caller);
+        widget->GetTransform(t);
+        widget->GetProp3D()->SetUserTransform(t);
+    }
 };
 
-int main( int vtkNotUsed( argc ), char* vtkNotUsed( argv )[] )
+int main(int vtkNotUsed(argc), char *vtkNotUsed(argv)[])
 {
-  vtkSmartPointer<vtkConeSource> cone =
-    vtkSmartPointer<vtkConeSource>::New();
+    vtkSmartPointer<vtkConeSource> cone = vtkSmartPointer<vtkConeSource>::New();
 
+    vtkSmartPointer<vtkPolyDataMapper> coneMapper =
+        vtkSmartPointer<vtkPolyDataMapper>::New();
+    coneMapper->SetInputConnection(cone->GetOutputPort());
 
-  vtkSmartPointer<vtkPolyDataMapper> coneMapper =
-    vtkSmartPointer<vtkPolyDataMapper>::New();
-  coneMapper->SetInputConnection( cone->GetOutputPort() );
+    vtkSmartPointer<vtkActor> coneActor = vtkSmartPointer<vtkActor>::New();
+    coneActor->SetMapper(coneMapper);
 
-  vtkSmartPointer<vtkActor> coneActor =
-    vtkSmartPointer<vtkActor>::New();
-  coneActor->SetMapper( coneMapper );
+    vtkSmartPointer<vtkRenderer> renderer = vtkSmartPointer<vtkRenderer>::New();
+    renderer->AddActor(coneActor);
 
-  vtkSmartPointer<vtkRenderer> renderer =
-    vtkSmartPointer<vtkRenderer>::New();
-  renderer->AddActor( coneActor );
+    renderer->SetBackground(0.1, 0.2, 0.4);
 
-    vtkSmartPointer<vtkConeSource> cone2 =
-    vtkSmartPointer<vtkConeSource>::New();
+    vtkSmartPointer<vtkRenderWindow> window =
+        vtkSmartPointer<vtkRenderWindow>::New();
+    window->AddRenderer(renderer);
+    window->SetSize(300, 300);
 
+    vtkSmartPointer<vtkRenderWindowInteractor> interactor =
+        vtkSmartPointer<vtkRenderWindowInteractor>::New();
+    interactor->SetRenderWindow(window);
 
-  vtkSmartPointer<vtkPolyDataMapper> coneMapper2 =
-    vtkSmartPointer<vtkPolyDataMapper>::New();
-  coneMapper2->SetInputConnection( cone2->GetOutputPort() );
+    vtkSmartPointer<vtkInteractorStyleTrackballCamera> style =
+        vtkSmartPointer<vtkInteractorStyleTrackballCamera>::New();
+    interactor->SetInteractorStyle(style);
 
-  vtkSmartPointer<vtkActor> coneActor2 =
-    vtkSmartPointer<vtkActor>::New();
-  coneActor2->SetMapper( coneMapper2 );
-  renderer->AddActor( coneActor2 );
+    vtkSmartPointer<vtkBoxWidget> boxWidget =
+        vtkSmartPointer<vtkBoxWidget>::New();
+    boxWidget->SetInteractor(interactor);
 
-  renderer->SetBackground( 0.1, 0.2, 0.4 );
+    boxWidget->SetProp3D(coneActor);
+    boxWidget->SetPlaceFactor(
+        1.25);  // Make the box 1.25x larger than the actor
+    boxWidget->PlaceWidget();
 
-  vtkSmartPointer<vtkRenderWindow> window =
-    vtkSmartPointer<vtkRenderWindow>::New();
-  window->AddRenderer( renderer );
-  window->SetSize( 300, 300 );
+    vtkSmartPointer<vtkMyCallback> callback =
+        vtkSmartPointer<vtkMyCallback>::New();
+    boxWidget->AddObserver(vtkCommand::InteractionEvent, callback);
 
-  vtkSmartPointer<vtkRenderWindowInteractor> interactor =
-    vtkSmartPointer<vtkRenderWindowInteractor>::New();
-  interactor->SetRenderWindow( window );
+    boxWidget->On();
 
-  vtkSmartPointer<vtkInteractorStyleTrackballCamera> style =
-    vtkSmartPointer<vtkInteractorStyleTrackballCamera>::New();
-  interactor->SetInteractorStyle( style );
+    interactor->Start();
 
-  vtkSmartPointer<vtkBoxWidget> boxWidget =
-    vtkSmartPointer<vtkBoxWidget>::New();
-  boxWidget->SetInteractor( interactor );
-
-  boxWidget->SetProp3D( coneActor );
-  boxWidget->SetPlaceFactor( 1.25 ); // Make the box 1.25x larger than the actor
-  boxWidget->PlaceWidget();
-
-  vtkSmartPointer<vtkMyCallback> callback =
-    vtkSmartPointer<vtkMyCallback>::New();
-  boxWidget->AddObserver( vtkCommand::InteractionEvent, callback );
-
-  boxWidget->On();
-
-  interactor->Start();
-
-  return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
