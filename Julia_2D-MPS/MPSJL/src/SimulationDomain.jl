@@ -11,7 +11,6 @@ mutable struct SimulationData
     deltaTime_::Float64
 
     particleRadius_::Float64
-    influenceRadius_::Float64
 
     gravity_::Vec3F
 

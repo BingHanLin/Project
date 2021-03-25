@@ -3,13 +3,9 @@ module InteractionModel
 using ..ParticleData: Particle, ParticlePool
 using ..BasicTypes
 
-struct ModelData
-    pos_::Vec3F
-    vel_::Vec3F
-    pressure_::Float64
-    numberDensity_::Float64
-    neighbors_::Vector{Int64}
-    type_::particleType
+struct InteractionModel
+    refNumberDensity_::Float64
+    influenceRadius_::Float64
 end
 
 function sqrDis(p1::Particle, p2::Particle)::Float64
