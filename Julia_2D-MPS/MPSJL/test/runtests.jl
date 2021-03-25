@@ -11,17 +11,19 @@ MPSJL.updatePreParticlePool(simData)
 # report summary
 MPSJL.summary(simData)
 
-MPSJL.updateNeighborPool(simData)
-
 while simData.currentTime_ <= simData.endTime_
+
+    MPSJL.updateNeighborPool(simData)
+    
+    MPSJL.updateNumberDensity(simData)
 
     simData.currentTime_ += simData.deltaTime_
 end
 
 
-MPSJL.updateNumberDensity(simData)
 
-println(simData.neighborPool_[5])
+
+println(simData.particlePool_[5].neighbors_)
 println(simData.particlePool_[5].numberDensity_)
 
 

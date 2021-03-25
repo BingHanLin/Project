@@ -18,17 +18,15 @@ struct BoxGeometry
     numWallLayer_::Int64
     numDummyLayer_::Int64
 
-    function BoxGeometry(
+    BoxGeometry(
         xMin::Float64,
         yMin::Float64,
         zMin::Float64,
         xMax::Float64,
         yMax::Float64,
         zMax::Float64,
-        filledHeight::Float64,
-    )
-        new(xMin, yMin, zMin, xMax, yMax, zMax, filledHeight, 1, 3)
-    end
+        filledHeight::Float64) = new(xMin, yMin, zMin, xMax, yMax, zMax, filledHeight, 1, 3)
+
 end
 
 function generateParticle(geom::BoxGeometry, pool::ParticlePool, particleRadius::Float64)
@@ -69,9 +67,6 @@ function generateParticle(geom::BoxGeometry, pool::ParticlePool, particleRadius:
     generateDummyParticle(geom, pool, particleRadius, particleDiameter)
     numDummyParticles = length(pool) - numFluidParticles - numWallParticles
     println("generate dummy particles: ", numDummyParticles)
-
-
-
 
 end
 
@@ -270,8 +265,8 @@ end
 
 
 
-if abspath(PROGRAM_FILE) == @__FILE__
-    println(methods(BoxDomain))
-end
+# if abspath(PROGRAM_FILE) == @__FILE__
+#     println(methods(BoxDomain))
+# end
 
 end
