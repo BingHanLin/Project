@@ -3,6 +3,15 @@ module InteractionModel
 using ..ParticleData: Particle, ParticlePool
 using ..BasicTypes
 
+struct ModelData
+    pos_::Vec3F
+    vel_::Vec3F
+    pressure_::Float64
+    numberDensity_::Float64
+    neighbors_::Vector{Int64}
+    type_::particleType
+end
+
 function sqrDis(p1::Particle, p2::Particle)::Float64
     return sum((p1.pos_ - p2.pos_) .^ 2)
 end
@@ -20,25 +29,39 @@ function grad(
     particles::ParticlePool,
     numberDensityRef::Float64,
     influenceRadius::Float64,
+    getter::Function,
 )::Vec3F
 
     grad = Vec3F(0.0, 0.0, 0.0)
 
     for neighborID = 1:length(particles[id].neighbors_)
-        w = weighting(
-            sqrDis(particles[neighborID].pos_, particles[id].pos_)^0.5,
-            influenceRadius,
-        )
+        vec = particles[neighborID].pos_ - particles[id].pos_
+        sqr = sqrDis(particles[neighborID].pos_, particles[id].pos_)
+        w = weighting(sqr^0.5, influenceRadius)
+        varDiff = getter(particles[neighborID]) - getter(particles[id])
+        grad += varDiff * vec * w / varDiff
     end
+
+    return grad
+
 end
 
-# function numberDensity(p::Particle, pool::ParticlePool)::Float64
-# if r <= model.influenceRadius_
-#     return model.influenceRadius_ / r - 1
-# else
-#     return 0.0
-# end
-# end
+function getU(p::Particle)::Float64
+    return p.vel_[0]
+end
+
+function getV(p::Particle)::Float64
+    return p.vel_[1]
+end
+
+function getW(p::Particle)::Float64
+    return p.vel_[2]
+end
+
+function getP(p::Particle)::Float64
+    return p.pressure_
+end
+
 
 
 
