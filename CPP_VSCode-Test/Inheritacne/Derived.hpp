@@ -8,21 +8,22 @@ class Derived : public Base
     /* data */
    public:
     Derived(/* args */);
-    ~Derived();
+    // ~Derived();
 
     void show();
-    virtual void vShow();
+    // virtual void vShow() override;
 };
 
 Derived::Derived(/* args */)
 {
     // name_ = "Derived";
+    std::cout << "Derived " << name_ << " constructed. " << std::endl;
 }
 
-Derived::~Derived()
-{
-    std::cout << "Derived " << name_ << " deleted " << std::endl;
-}
+// Derived::~Derived()
+// {
+//     std::cout << "Derived " << name_ << " deleted " << std::endl;
+// }
 
 void Derived::show()
 {
@@ -30,7 +31,7 @@ void Derived::show()
     std::cout << "Derived's data " << data_ << std::endl;
 }
 
-void Derived::vShow()
-{
-    std::cout << "vShow Derived's name " << name_ << std::endl;
-}
+// void Derived::vShow()
+// {
+//     std::cout << "vShow Derived's name " << name_ << std::endl;
+// }
