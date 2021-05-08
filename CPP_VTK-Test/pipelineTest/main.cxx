@@ -68,8 +68,6 @@ class vtkTimerCallback : public vtkCommand
                 readUnstructuredGrid("0.vtu");
             trivialProducer_->SetOutput(grid);
         }
-        trivialProducer_->Modified();
-        actor_->GetMapper()->Update();
         renderer_->GetRenderWindow()->Render();
     };
 
