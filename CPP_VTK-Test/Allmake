@@ -18,4 +18,6 @@ cmake --install build --config Release
 
 cp "$VTK_BIN"/*-8.2.dll bin/Release
 
-bin/Release/main.exe
+cd bin/Release
+./main.exe
+cd ../..

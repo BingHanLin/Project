@@ -27,3 +27,7 @@ else ()
     MODULES ${VTK_LIBRARIES}
     )
 endif ()
+
+install(DIRECTORY  ${TARGET_DIR}/
+        DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Release"
+)
