@@ -1,0 +1,23 @@
+#!/bin/bash
+cd ${0%/*} || exit 1    # Run from this directory
+
+target_name=$1
+
+. vtkPath.config
+
+rm -r bin
+
+cmake   -S. -Bbuild \
+        -DTARGET_DIR:PATH="$target_name" \
+        -DVTK_DIR:PATH="$VTK_DIR" \
+        -G "Visual Studio 16 2019"
+
+cmake --build build --config Release
+cmake --install build --config Release
+
+
+cp "$VTK_BIN"/*-8.2.dll bin/Release
+
+cd bin/Release
+./main.exe
+cd ../..
