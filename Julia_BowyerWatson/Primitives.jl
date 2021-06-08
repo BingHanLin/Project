@@ -7,8 +7,8 @@ using .BasicTypes
 
 
 using .BasicTypes
-export Vertex, Triangle
-export isInTriangle, isInInCircumcircle, vertexByIndex
+export Vertex, Triangle, Edge
+export isInTriangle, isInInCircumcircle, vertexByIndex, contains
 
 
 mutable struct Vertex <: FieldVector{3,Float64}
@@ -21,18 +21,36 @@ function Base.show(io::IO, v::Vertex)
     @printf("%f %f %f", v.x_, v.y_, v.z_)
 end
 
+mutable struct Edge
+    v1_::Vertex
+    v2_::Vertex
+    isDuplicated_::Bool
+
+    function Edge(v1::Vertex, v2::Vertex)
+        this = new()
+        this.v1_ = v1
+        this.v2_ = v2
+        this.isDuplicated_ = false
+        return this
+    end
+end
+
+function Base.show(io::IO, e::Edge)
+    @printf("%f %f", e.v1_, e.v2_)
+end
+
 mutable struct Triangle
     v1_::Vertex
     v2_::Vertex
     v3_::Vertex
-    neighbors_::Array{Triangle,1}
+    isBad_::Bool
 
     function Triangle(v1::Vertex, v2::Vertex, v3::Vertex)
         this = new()
         this.v1_ = v1
         this.v2_ = v2
         this.v3_ = v3
-        this.neighbors_ = Array{Triangle,1}(undef, 3)
+        this.isBad_ = false
         return this
     end
 
@@ -54,6 +72,10 @@ function vertexByIndex(t::Triangle, index::Int64)::Vertex
     else
         @assert false "Invalid index."
     end
+end
+
+function contains(t::Triangle, v::Vertex)::Bool
+    return  t.v1_ == v || t.v2_ == v || t.v3_ == v;
 end
 
 function isInTriangle(v::Vertex, t::Triangle)::Bool
