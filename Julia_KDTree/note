@@ -1,0 +1,1 @@
+julia --project=KDTree KDTree.jl
