@@ -1,3 +1,4 @@
+using LinearAlgebra: Array
 include("Primitives.jl")
 using .Primitives
 
@@ -29,6 +30,8 @@ mutable struct KDTree
             push!(this.nodes_, treeNode(vertice[i]))
         end
 
+        this.rootNode_ = recurBuildTree(this, 1, length(this.nodes_), 0);
+
         return this
     end
 end
@@ -36,55 +39,35 @@ end
 function recurBuildTree(tree::KDTree, beginIndex::Int64, endIndex::Int64,
                         splitDim::Int64)::Union{treeNode, Nothing}
 
-    if (endIndex <= beginIndex)
+    if (endIndex < beginIndex)
         return nothing
     end
 
-    localMidIndex = (endIndex - beginIndex)/2;
-    midIndex = beginIndex + localMidIndex;
     splitDim = mod1((splitDim + 1), 3)
-    
+    localMidIndex = cld((endIndex - beginIndex) , 2) + 1;
+    midIndex = beginIndex + localMidIndex - 1;
+
     @views partialsort!(tree.nodes_[beginIndex:endIndex], localMidIndex,
                         lt=(x, y)->isless(x.vertex_[splitDim], y.vertex_[splitDim]))
 
-    tree.nodes_[midIndex].leftChild_ = recurBuildTree(tree, beginIndex, midIndex, splitDim)
+    tree.nodes_[midIndex].leftChild_ = recurBuildTree(tree, beginIndex, midIndex-1, splitDim)
     tree.nodes_[midIndex].rightChild_ = recurBuildTree(tree, midIndex+1, endIndex, splitDim)
 
     return tree.nodes_[midIndex]
 end
 
-# node* make_tree(size_t begin, size_t end, size_t index) {
-#     if (end <= begin)
-#         return nullptr;
-#     size_t n = begin + (end - begin)/2;
-#     auto i = nodes_.begin();
-#     std::nth_element(i + begin, i + n, i + end, node_cmp(index));
-#     index = (index + 1) % dimensions;
-#     nodes_[n].left_ = make_tree(begin, n, index);
-#     nodes_[n].right_ = make_tree(n + 1, end, index);
-#     return &nodes_[n];
-# }
+function traverseTree(node::Union{treeNode, Nothing})
+
+    if (node === nothing)
+        return
+    end
+    traverseTree(node.leftChild_);
+    traverseTree(node.rightChild_);
+end
 
 
-splitDim = 0
+nodes = [Vertex(0.1,1.1,0.0),Vertex(0.2,0.7,1.0),Vertex(0.3,1.0,1.0),Vertex(1.0,0.6,1.1),Vertex(0.5,0.3,1.0)]
 
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-splitDim = mod1((splitDim + 1), 3)
-println(splitDim)
-
-# @views partialsort!(a[2:end], 3)
-
-# println(a)
-
-nodes = [Vertex(0.0,0.0,0.0),Vertex(0.0,0.0,1.0)]
-println(nodes)
 model = KDTree(nodes)
+
+traverseTree(model.rootNode_)
