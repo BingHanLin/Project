@@ -1,7 +1,11 @@
-using LinearAlgebra: Array
-include("Primitives.jl")
-using .Primitives
+module KDTreeModel
 
+include("Primitives.jl")
+export treeNode, KDTree, Vertex
+export traverseTree, nearestDistance
+
+using LinearAlgebra: Array
+using .Primitives
 using LinearAlgebra, StaticArrays, Printf
 
 mutable struct treeNode
@@ -70,7 +74,7 @@ function traverseTree(node::Union{treeNode, Nothing})
     traverseTree(node.rightChild_)
 end
 
-function nearestDistance(vertex::Vertex, node::Union{treeNode, Nothing},
+function reCurNearestDistance(vertex::Vertex, node::Union{treeNode, Nothing},
                          bestDis::Float64, bestNode::Union{treeNode, Nothing})::Tuple{Float64,Union{treeNode, Nothing}}
 
     if (node === nothing)
@@ -93,48 +97,23 @@ function nearestDistance(vertex::Vertex, node::Union{treeNode, Nothing},
     dimDelta = node.vertex_[splitDim] -vertex[splitDim]
 
     nextNode1 = dimDelta > 0 ? node.leftChild_ :  node.rightChild_
-    bestDis, bestNode = nearestDistance(vertex, nextNode1, bestDis, bestNode)
+    bestDis, bestNode = reCurNearestDistance(vertex, nextNode1, bestDis, bestNode)
 
     if (dimDelta >= bestDis)
         return bestDis, bestNode
     end
 
     nextNode2 = dimDelta > 0 ? node.rightChild_ :  node.leftChild_
-    bestDis, bestNode = nearestDistance(vertex, nextNode2, bestDis, bestNode)
+    bestDis, bestNode = reCurNearestDistance(vertex, nextNode2, bestDis, bestNode)
 
     return bestDis, bestNode
 end
 
 function nearestDistance(vertex::Vertex, node::Union{treeNode, Nothing})::Float64
-    bestDis, _ = nearestDistance(vertex, node,  typemax(Float64), node)
+    bestDis, _ = reCurNearestDistance(vertex, node,  typemax(Float64), node)
     return bestDis
 end
 
-# void nearest(node* root, const point_type& point, size_t index) {
-#     if (root == nullptr)
-#         return;
-#     ++visited_;
-#     double d = root->distance(point);
-#     if (best_ == nullptr || d < best_dist_) {
-#         best_dist_ = d;
-#         best_ = root;
-#     }
-#     if (best_dist_ == 0)
-#         return;
-#     double dx = root->get(index) - point.get(index);
-#     index = (index + 1) % dimensions;
-#     nearest(dx > 0 ? root->left_ : root->right_, point, index);
-#     if (dx * dx >= best_dist_)
-#         return;
-#     nearest(dx > 0 ? root->right_ : root->left_, point, index);
-# }
+end
 
-nodes = [Vertex(0.1,1.1,0.0),Vertex(0.2,0.7,1.0),Vertex(0.3,1.0,1.0),Vertex(1.0,0.6,1.1),Vertex(0.5,0.3,1.0)]
 
-model = KDTree(nodes)
-
-traverseTree(model.rootNode_)
-
-bestDis = nearestDistance(Vertex(0.1,1.102,0.0), model.rootNode_)
-
-println(bestDis)
