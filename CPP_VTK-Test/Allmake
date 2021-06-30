@@ -10,14 +10,14 @@ rm -r bin
 cmake   -S. -Bbuild \
         -DTARGET_DIR:PATH="$target_name" \
         -DVTK_DIR:PATH="$VTK_DIR" \
-        -G "Visual Studio 16 2019"
+        -G "MinGW Makefiles"
 
 cmake --build build --config Release
 cmake --install build --config Release
 
 
-cp "$VTK_BIN"/*-8.2.dll bin/Release
+cp "$VTK_BIN"/*-9.0.dll bin
 
-cd bin/Release
+cd bin
 ./main.exe
-cd ../..
+cd ..
