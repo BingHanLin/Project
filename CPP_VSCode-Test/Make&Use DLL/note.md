@@ -1,0 +1,1 @@
+http://puremonkey2010.blogspot.com/2010/08/c-export-dll-export-dll.html
