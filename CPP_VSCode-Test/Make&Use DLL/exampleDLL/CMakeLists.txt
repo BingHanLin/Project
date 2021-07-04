@@ -20,3 +20,10 @@ target_include_directories(${PROJECT_NAME}
   PUBLIC
     ${PROJECT_SOURCE_DIR}
 )
+
+if(USE_SHARED)
+  target_compile_definitions(${PROJECT_NAME} 
+    PUBLIC
+      -DEXAMPLELIBRARY_EXPORTS
+  )
+endif()

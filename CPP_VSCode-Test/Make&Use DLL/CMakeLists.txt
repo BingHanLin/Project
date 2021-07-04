@@ -20,4 +20,3 @@ target_link_libraries(${PROJECT_NAME}
   PUBLIC
     ${PROJECT_SOURCE_DIR}/exampleDLL/build/archive/libexample.lib
 )
-

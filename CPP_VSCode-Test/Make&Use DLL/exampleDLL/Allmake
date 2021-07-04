@@ -6,6 +6,7 @@ cd ${0%/*} ||exit 1
 # https://blog.csdn.net/10km/article/details/50525604
 # Generate a project buildsystem by MinGW
 cmake -S. -Bbuild -G "MinGW Makefiles" \
+    -DUSE_SHARED=ON \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_GNUtoMS:BOOL=ON
 # Build a project
